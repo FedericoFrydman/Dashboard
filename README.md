@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+# Making Sense Dashboard Structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The platform was built thinking about your feedback and its modularization.
+For this, I have chosen to create 5 different components.
+
+1. CardFollowers: A card that shows the followers/subscribers with the account name and their modified number.
+2. CardOverview: A card that shows the information corresponding to each parameter
+3. Switch: A component dedicated solely to modifying the site mode. The positive thing about this module is that it can be implemented directly not only in this project, but in any other with a minimum of configuration.
+4. Modal: A modal that can be passed parameters to complete the data. Also includes the Chart Component.
+5. Chart: This component is responsible for displaying the graph and managing its settings. In this case, it is added inside the Modal component.
+   For the responsive order, in addition to using @media querys, I used Grid to manage the positions of the Cards and Flexbox to order each of them inside. (I used both for the simple reason of showing their uses. It could have been all Grid or all Flexbox).
+
+Also, I created variables for the colors, since if the application grows in the future and you want to maintain a good design scheme, it will serve to standardize.
+Finally, I used Typescript and opted for the CSS-in-JS styled-components library since to modularize components in React, I find it a very powerful tool.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
