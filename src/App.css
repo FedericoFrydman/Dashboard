@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* General styling */
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -18,9 +19,12 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
 .light-mode {
   background-color: var(--white);
 }
+
+/* Dark Mode Styling */
 .dark-mode {
   background-color: var(--very-dark-blue);
 }

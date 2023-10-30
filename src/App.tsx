@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import styled from 'styled-components';
 import CardFollowers from './components/CardFollowers';
 import CardStats from './components/CardStats';
@@ -132,16 +132,20 @@ const CardsContainer = styled.div`
 `;
 
 function App() {
+  /* array of svgs */
   const svgIcon = { facebook, instagram, twitter, youtube };
 
+  /* setting the mode */
   const [theme, setTheme] = useState('light');
+  /* Creating the className with the mode */
   const className = theme + '-mode';
+
+  /* State handler for the modal */
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
     setModalOpen(true);
   };
-
   const closeModal = () => {
     setModalOpen(false);
   };

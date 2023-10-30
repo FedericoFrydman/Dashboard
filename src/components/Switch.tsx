@@ -1,9 +1,10 @@
-import React, { useState, useContext, ChangeEvent } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import styled from 'styled-components';
 
 interface SwitchProps {
   onClick?: () => void;
 }
+/* Custom Styling for the Switch but the changing mode functionality is in App.tsx */
 const SwitchComp = styled.div`
   display: flex;
   flex-direction: row;
