@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-pale-blue: #f5f7ff; /*(Top BG Pattern)*/
+  --light-grey-blue: #f0f2fa; /*(Card BG)*/
+  --dark-grey-blue: #63687e; /*(Text)*/
+  --very-dark-blue: #1e202a; /*(Text)(BG)*/
+  --chart-color: #8f8bda; /*(Chart)*/
+  --dark-pale-blue: #1f212e; /*(Top BG Pattern)*/
+  --dark-desa-blue: #252a41; /*(Card BG)*/
+  --dark-desa-blue-hover: #333a56; /*(Card BG hover)*/
+  --desa-blue: #8b97c6; /*(Text)*/
+  --dark-toggle: #aeb3cb;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.light-mode {
+  background-color: var(--white);
+}
+.dark-mode {
+  background-color: var(--very-dark-blue);
+}
+.dark-mode .switch label {
+  background: linear-gradient(
+    90deg,
+    rgba(55, 143, 230) 0%,
+    rgba(62, 218, 130) 100%
+  );
+}
+.dark-mode .switch label:hover {
+  background: hsl(230, 22%, 74%);
+}
+.dark-mode .switch label::after {
+  background: var(--dark-toggle);
+}
+.dark-mode .switch label:hover:after {
+  background: var(--white);
+}
+.dark-mode .switch div {
+  color: var(--dark-toggle);
+}
+.dark-mode .header {
+  background-color: var(--dark-pale-blue);
+}
+.dark-mode .header h2 {
+  color: var(--white);
+}
+.dark-mode .header h3 {
+  color: var(--dark-grey-blue);
+}
+.dark-mode .title-grid h2 {
+  color: var(--white);
+}
+.dark-mode .card-follower {
+  background-color: var(--dark-desa-blue);
+}
+.dark-mode .card-follower:hover {
+  background-color: var(--dark-desa-blue-hover);
+}
+.dark-mode .card-follower h2 {
+  color: var(--white);
+}
+.dark-mode .card-stats {
+  background-color: var(--dark-desa-blue);
+}
+.dark-mode .card-stats:hover {
+  background-color: var(--dark-desa-blue-hover);
+}
+.dark-mode .card-stats h3 {
+  color: var(--white);
+}
+.dark-mode .modal button {
+  color: var(--white);
+}
+.dark-mode .modal {
+  background-color: var(--dark-desa-blue);
+}
+.dark-mode .modal .day-section {
+  background-color: var(--very-dark-blue);
+  border-radius: 12px 12px 0 0;
+}
+.dark-mode .modal .chart-section {
+  background-color: var(--very-dark-blue);
+}
+.dark-mode .modal .header {
+  background-color: var(--dark-desa-blue);
+}
+.custom-tooltip {
+  border: 1px solid var(--dark-toggle);
+}
+.dark-mode .custom-tooltip {
+  border: 1px solid #908cd9;
+}
+.custom-tooltip .intro {
+  color: #908cd9;
+  margin: 0;
+  padding: 4px;
+  font-size: 14px;
+}
