@@ -12,6 +12,7 @@ For this, I have chosen to create 5 different components.
 
 Also, I created variables for the colors, since if the application grows in the future and you want to maintain a good design scheme, it will serve to standardize.
 Finally, I used Typescript and opted for the CSS-in-JS styled-components library since to modularize components in React, I find it a very powerful tool.
+Max-width 1440px.
 
 ## Available Scripts
 

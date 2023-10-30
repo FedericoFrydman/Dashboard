@@ -54,6 +54,10 @@ const XButton = styled.button`
   margin-right: -40px;
   transform: scale(1.6, 1.2);
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 const Title = styled.h2`
   display: flex;
